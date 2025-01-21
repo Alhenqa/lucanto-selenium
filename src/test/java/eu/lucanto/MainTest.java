@@ -63,16 +63,10 @@ public class MainTest extends AbstractTest {
 //            test.fail("login failed");
 //        }
     }
-    @AfterEach
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-        extent.flush(); // Generates the report
-    }
+
 
     @Override
-    String getTestName() {
+    public String getTestName() {
         return "Lucanto Login Test";
     }
 }

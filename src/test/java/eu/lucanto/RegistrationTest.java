@@ -4,12 +4,16 @@ import org.junit.jupiter.api.Test;
 
 public class RegistrationTest extends AbstractTest{
     @Override
-    String getTestName() {
+    public String getTestName() {
         return "Registration test";
     }
 
     @Test
-    public void testRegistration() {
+    public void testRegistrationSuccess() {
         test.pass("Registration test passed");
+    }
+    @Test
+    public void testRegistrationFail() {
+        test.fail("Registration test passed");
     }
 }
